@@ -17,10 +17,10 @@ export default function App() {
             </div>
             <h2 className="text-lg font-semibold text-gray-800 mt-4">{item.name}</h2>
             <div className="flex gap-4 mt-3">
-              <Link to={`/react-website/privacy-policy/${item.id}`} className="px-4 py-2 text-sm text-white bg-blue-600 rounded-md hover:bg-blue-700 transition">
+              <Link to={`/privacy-policy/${item.id}`} className="px-4 py-2 text-sm text-white bg-blue-600 rounded-md hover:bg-blue-700 transition">
                 Privacy Policy
               </Link>
-              <Link to={`/react-website/terms-of-service/${item.id}`} className="px-4 py-2 text-sm text-white bg-gray-600 rounded-md hover:bg-gray-700 transition">
+              <Link to={`/terms-of-service/${item.id}`} className="px-4 py-2 text-sm text-white bg-gray-600 rounded-md hover:bg-gray-700 transition">
                 Terms of Service
               </Link>
             </div>
