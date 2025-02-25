@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { resources } from '../resource';
 
-import "./app.css";
+import "./App.css";
 
 export default function App() {
   return (
