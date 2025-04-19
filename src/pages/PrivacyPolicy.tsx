@@ -70,7 +70,7 @@ export default function PrivacyPolicy() {
                 <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">
                     {selectedContent.title}
                 </h1>
-                <p className="text-gray-600 text-center mb-8">{selectedContent.lastUpdate}: {language === "vi" ? "Ngày 24 tháng 2 năm 2025" : "February 24, 2025"}</p>
+                <p className="text-gray-600 text-center mb-8">{selectedContent.lastUpdate}: {language === "vi" ? appInfo?.dateVI : appInfo?.dateEN}</p>
 
                 <section className="mb-6">
                     <h2 className="text-xl font-semibold text-gray-800">1. {selectedContent.introduction}</h2>
