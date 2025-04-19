@@ -64,19 +64,19 @@ export default function TermsOfService() {
                 <h1 className="text-3xl font-bold text-center text-gray-900 mb-6">
                     {selectedContent.title}
                 </h1>
-                <p className="text-gray-600 text-center mb-8">{selectedContent.lastUpdate}: {language === "vi" ? "Ngày 24 tháng 2 năm 2025" : "February 24, 2025"}</p>
+                <p className="text-gray-600 text-center mb-8">{selectedContent.lastUpdate}: {language === "vi" ? appInfo?.dateVI : appInfo?.dateEN}</p>
 
                 <section className="mb-6">
                     <h2 className="text-xl font-semibold text-gray-800">1. {selectedContent.introduction}</h2>
                     <p className="text-gray-700 mt-2">
                         {language === "vi" ? (
                             <>
-                                Chào mừng bạn đến với <strong>{appInfo!.name}</strong>. Đây là một ứng dụng quản lý công việc hàng ngày.
+                                Chào mừng bạn đến với <strong>{appInfo!.name}</strong>. {appInfo?.descriptionVI}.
                                 Bằng cách sử dụng ứng dụng, bạn đồng ý với các điều khoản và điều kiện sau đây.
                             </>
                         ) : (
                             <>
-                                Welcome to <strong>{appInfo!.name}</strong>. This is a daily task management app.
+                                Welcome to <strong>{appInfo!.name}</strong>. {appInfo?.descriptionEN}.
                                 We are committed to protecting your privacy.
                             </>
                         )}
