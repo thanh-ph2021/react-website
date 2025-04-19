@@ -77,12 +77,12 @@ export default function PrivacyPolicy() {
                     <p className="text-gray-700 mt-2">
                         {language === "vi" ? (
                             <>
-                                Chào mừng bạn đến với <strong>{appInfo!.name}</strong>. Đây là một ứng dụng quản lý công việc hàng ngày.
+                                Chào mừng bạn đến với <strong>{appInfo!.name}</strong>. {appInfo?.descriptionVI}.
                                 Chúng tôi cam kết bảo vệ quyền riêng tư của bạn.
                             </>
                         ) : (
                             <>
-                                Welcome to <strong>{appInfo!.name}</strong>. This is a daily task management app.
+                                Welcome to <strong>{appInfo!.name}</strong>. {appInfo?.descriptionEN}.
                                 We are committed to protecting your privacy.
                             </>
                         )}
